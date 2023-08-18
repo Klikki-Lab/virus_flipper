@@ -1,0 +1,337 @@
+{
+	"width": 1280,
+	"height": 720,
+	"fps": 30,
+	"main": "./script/_bootstrap.js",
+	"assets": {
+		"_bootstrap": {
+			"type": "script",
+			"path": "script/_bootstrap.js",
+			"global": true
+		},
+		"main": {
+			"type": "script",
+			"path": "script/main.js",
+			"global": true
+		},
+		"parameterObject": {
+			"type": "script",
+			"path": "script/parameterObject.js",
+			"global": true
+		},
+		"BaseScene": {
+			"type": "script",
+			"path": "script/BaseScene.js",
+			"global": true
+		},
+		"GameScene": {
+			"type": "script",
+			"path": "script/GameScene.js",
+			"global": true
+		},
+		"TitleScene": {
+			"type": "script",
+			"path": "script/TitleScene.js",
+			"global": true
+		},
+		"HowToPlayScene": {
+			"type": "script",
+			"path": "script/HowToPlayScene.js",
+			"global": true
+		},
+		"Backgroung": {
+			"type": "script",
+			"path": "script/Backgroung.js",
+			"global": true
+		},
+		"BitmapFontLabel": {
+			"type": "script",
+			"path": "script/BitmapFontLabel.js",
+			"global": true
+		},
+		"BounceEffect": {
+			"type": "script",
+			"path": "script/BounceEffect.js",
+			"global": true
+		},
+		"Button": {
+			"type": "script",
+			"path": "script/Button.js",
+			"global": true
+		},
+		"Flipper": {
+			"type": "script",
+			"path": "script/Flipper.js",
+			"global": true
+		},
+		"SceneController": {
+			"type": "script",
+			"path": "script/SceneController.js",
+			"global": true
+		},
+		"ScoreEffect": {
+			"type": "script",
+			"path": "script/ScoreEffect.js",
+			"global": true
+		},
+		"Start": {
+			"type": "script",
+			"path": "script/Start.js",
+			"global": true
+		},
+		"Ticker": {
+			"type": "script",
+			"path": "script/Ticker.js",
+			"global": true
+		},
+		"Score": {
+			"type": "script",
+			"path": "script/Score.js",
+			"global": true
+		},
+		"Finish": {
+			"type": "script",
+			"path": "script/Finish.js",
+			"global": true
+		},
+		"BlackVirus": {
+			"type": "script",
+			"path": "script/virus/BlackVirus.js",
+			"global": true
+		},
+		"BlackVirus2": {
+			"type": "script",
+			"path": "script/virus/BlackVirus2.js",
+			"global": true
+		},
+		"BlackVirus3": {
+			"type": "script",
+			"path": "script/virus/BlackVirus3.js",
+			"global": true
+		},
+		"Virus": {
+			"type": "script",
+			"path": "script/virus/Virus.js",
+			"global": true
+		},
+		"WhiteVirus": {
+			"type": "script",
+			"path": "script/virus/WhiteVirus.js",
+			"global": true
+		},
+		"WhiteVirus2": {
+			"type": "script",
+			"path": "script/virus/WhiteVirus2.js",
+			"global": true
+		},
+		"WhiteVirus3": {
+			"type": "script",
+			"path": "script/virus/WhiteVirus3.js",
+			"global": true
+		},
+		"black_1": {
+			"type": "image",
+			"path": "image/black_1.png",
+			"width": 512,
+			"height": 128
+		},
+		"black_2": {
+			"type": "image",
+			"path": "image/black_2.png",
+			"width": 512,
+			"height": 128
+		},
+		"black_3": {
+			"type": "image",
+			"path": "image/black_3.png",
+			"width": 512,
+			"height": 128
+		},
+		"bounce_effect": {
+			"type": "image",
+			"path": "image/bounce_effect.png",
+			"width": 128,
+			"height": 40
+		},
+		"mode_normal": {
+			"type": "image",
+			"path": "image/mode_normal.png",
+			"width": 460,
+			"height": 128
+		},
+		"mode_normal_msg": {
+			"type": "image",
+			"path": "image/mode_normal_msg.png",
+			"width": 453,
+			"height": 128
+		},
+		"mode_hardcore": {
+			"type": "image",
+			"path": "image/mode_hardcore.png",
+			"width": 460,
+			"height": 128
+		},
+		"mode_hardcore_msg": {
+			"type": "image",
+			"path": "image/mode_hardcore_msg.png",
+			"width": 586,
+			"height": 128
+		},
+		"start": {
+			"type": "image",
+			"path": "image/start.png",
+			"width": 900,
+			"height": 190
+		},
+		"finish": {
+			"type": "image",
+			"path": "image/finish.png",
+			"width": 982,
+			"height": 204
+		},
+		"perfect": {
+			"type": "image",
+			"path": "image/perfect.png",
+			"width": 200,
+			"height": 95
+		},
+		"restart": {
+			"type": "image",
+			"path": "image/restart.png",
+			"width": 128,
+			"height": 128
+		},
+		"home": {
+			"type": "image",
+			"path": "image/home.png",
+			"width": 128,
+			"height": 128
+		},
+		"ranking": {
+			"type": "image",
+			"path": "image/ranking.png",
+			"width": 128,
+			"height": 128
+		},
+		"title_logo": {
+			"type": "image",
+			"path": "image/title_logo.png",
+			"width": 664,
+			"height": 388
+		},
+		"how_to_play": {
+			"type": "image",
+			"path": "image/how_to_play.png",
+			"width": 209,
+			"height": 194
+		},
+		"description": {
+			"type": "image",
+			"path": "image/description.png",
+			"width": 1280,
+			"height": 720
+		},
+		"close": {
+			"type": "image",
+			"path": "image/close.png",
+			"width": 169,
+			"height": 157
+		},
+		"white_1": {
+			"type": "image",
+			"path": "image/white_1.png",
+			"width": 512,
+			"height": 128
+		},
+		"white_2": {
+			"type": "image",
+			"path": "image/white_2.png",
+			"width": 512,
+			"height": 128
+		},
+		"white_3": {
+			"type": "image",
+			"path": "image/white_3.png",
+			"width": 512,
+			"height": 128
+		},
+		"bitmap_font": {
+			"type": "image",
+			"path": "image/numbers.png",
+			"width": 590,
+			"height": 60
+		},
+		"font_glyphs": {
+			"type": "text",
+			"path": "text/font_glyphs.json"
+		},
+		"bgm": {
+			"type": "audio",
+			"path": "audio/bokobokobomber",
+			"systemId": "music",
+			"duration": 45335,
+			"hint": {
+				"extensions": [
+					".aac",
+					".ogg"
+				]
+			}
+		},
+		"bgm_intro": {
+			"type": "audio",
+			"path": "audio/bokobokobomber_intro",
+			"systemId": "sound",
+			"duration": 5333,
+			"hint": {
+				"extensions": [
+					".aac",
+					".ogg"
+				]
+			}
+		},
+		"se_laugh": {
+			"type": "audio",
+			"path": "audio/monsterakumanowarai",
+			"systemId": "sound",
+			"duration": 1799,
+			"hint": {
+				"extensions": [
+					".aac",
+					".ogg"
+				]
+			}
+		},
+		"se_bound": {
+			"type": "audio",
+			"path": "audio/monsterpuyon",
+			"systemId": "sound",
+			"duration": 578,
+			"hint": {
+				"extensions": [
+					".aac",
+					".ogg"
+				]
+			}
+		}
+	},
+	"environment": {
+		"sandbox-runtime": "3",
+		"nicolive": {
+			"supportedModes": [
+				"ranking"
+			],
+			"preferredSessionParameters": {
+				"totalTimeLimit": 78
+			}
+		},
+		"niconico": {
+			"supportedModes": [
+				"ranking"
+			],
+			"preferredSessionParameters": {
+				"totalTimeLimit": 78
+			}
+		}
+	},
+	"globalScripts": []
+}
