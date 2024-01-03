@@ -197,6 +197,37 @@ export class GameScene extends BaseScene {
             }
         }
 
+        // const homeButton = new Button(this, "home");
+        // homeButton.x = g.game.width / 2 - homeButton.width * 2;
+        // homeButton.y = g.game.height / Flipper.DIVISION * 3;
+        // homeButton.onClick.add(_tag => {
+        //     this.asset.getAudioById("bgm").stop();
+        //     this.onFinish.fire();
+        // });
+        // this.append(homeButton);
+
+        // const restartButton = new Button(this, "restart");
+        // restartButton.x = g.game.width / 2 + restartButton.width * 2;
+        // restartButton.y = g.game.height / Flipper.DIVISION * 3;
+        // restartButton.onClick.add(_tag => {
+        //     destroyEntities();
+        //     this.init();
+        //     this.startGame();
+        // });
+        // this.append(restartButton);
+
+        // const destroyEntities = () => {
+        //     finish.destroy();
+        //     if (message) {
+        //         message.destroy();
+        //     }
+        //     if (perfect) {
+        //         perfect.destroy();
+        //     }
+        //     homeButton.destroy();
+        //     restartButton.destroy();
+        // };
+
         if (!this.isAtsumaru) return;
         (() => {
             const SCOREBOARDS_ID = this.gameMode + 1;
@@ -226,7 +257,7 @@ export class GameScene extends BaseScene {
                     }
                 }).finally(() => {
                     const homeButton = new Button(this, "home");
-                    homeButton.x = g.game.width / 2;
+                    homeButton.x = g.game.width / 2 - homeButton.width;
                     homeButton.y = g.game.height / Flipper.DIVISION * 3;
                     homeButton.onClick.add(_tag => {
                         this.asset.getAudioById("bgm").stop();

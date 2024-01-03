@@ -29,6 +29,8 @@ export class TitleScene extends BaseScene {
             ],
         }, lifeTimeSec);
 
+        console.log(param);
+
         this.append(new Backgroung(this));
 
         const virusLayer = new g.E({ scene: this });
@@ -54,9 +56,42 @@ export class TitleScene extends BaseScene {
                 src: this.asset.getImageById("title_logo")
             });
             titleLogo.x = (g.game.width - titleLogo.width) / 2;
-            titleLogo.y = param.isAtsumaru ? titleLogo.height * 0.1 : (g.game.height - titleLogo.height) / 2;
+            titleLogo.y = titleLogo.height * 0.1;
             titleLogo.modified();
             this.append(titleLogo);
+
+            // const normalModeButton = new Button(this, "mode_normal");
+            // normalModeButton.x = g.game.width / 4;
+            // normalModeButton.y = titleLogo.y + titleLogo.height + normalModeButton.height * 0.7;
+            // normalModeButton.modified();
+            // normalModeButton.onClick.add(_tag => {
+            //     this.onUpdate.removeAll();
+            //     this.onClickStartGame.fire(TitleScene.GAME_MODE_NORMAL);
+            // });
+
+            // const normalMsg = new g.Sprite({ scene: this, src: this.asset.getImageById("mode_normal_msg") });
+            // normalMsg.x = g.game.width / 4 - normalMsg.width / 2;
+            // normalMsg.y = normalModeButton.y + normalModeButton.height * 0.55;
+            // normalMsg.modified();
+
+            // const hardcoreButton = new Button(this, "mode_hardcore");
+            // hardcoreButton.x = g.game.width / 2 + g.game.width / 4;
+            // hardcoreButton.y = titleLogo.y + titleLogo.height + hardcoreButton.height * 0.7;
+            // hardcoreButton.modified();
+            // hardcoreButton.onClick.add(_tag => {
+            //     this.onUpdate.removeAll();
+            //     this.onClickStartGame.fire(TitleScene.GAME_MODE_HARDCORE);
+            // });
+
+            // const hardcoreMsg = new g.Sprite({ scene: this, src: this.asset.getImageById("mode_hardcore_msg") });
+            // hardcoreMsg.x = g.game.width / 2 + g.game.width / 4 - hardcoreMsg.width / 2;
+            // hardcoreMsg.y = hardcoreButton.y + hardcoreButton.height * 0.55;
+            // hardcoreMsg.modified();
+
+            // this.append(normalMsg);
+            // this.append(normalModeButton);
+            // this.append(hardcoreMsg);
+            // this.append(hardcoreButton);
 
             if (param.isAtsumaru) {
                 const howToPlayButton = new Button(this, "how_to_play");
@@ -142,7 +177,6 @@ export class TitleScene extends BaseScene {
             let frame = 0;
             const ARRIVE_PERIOD = g.game.fps / 3;
             this.onUpdate.add(_ => {
-
                 if (frame++ % ARRIVE_PERIOD === 0) {
                     const virus = g.game.random.generate() > 0.5 ? new WhiteVirus(this) : new BlackVirus(this);
                     virus.opacity = 0.5;
