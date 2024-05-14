@@ -16,7 +16,7 @@ export function main(param: GameMainParameterObject): void {
 		playThreshold: 100, //プレイ閾値
 		clearThreshold: undefined, //クリア閾値
 	};
-	g.game.vars.version = "0.2.0.2";//バージョン更新忘れずに!!
+	g.game.vars.version = "0.3";//バージョン更新忘れずに!!
 	g.game.audio.music.volume = 0.1;
 	g.game.audio.sound.volume = 0.1;
 
